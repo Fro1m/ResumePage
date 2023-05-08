@@ -1,46 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    body {
+      background-color: #e7eaec;
+      margin: 0;
+      padding: 0;
+    }
 
+    img {
+      width: 18em;
+      height: 18Sem;
+      float: left;
+      margin-left: 2.5em;
+      z-index: 1;
+      position: relative;
+    }
 
-<style>
-  body {
-    background-color: #e7eaec;
-    margin: 0;
-    padding: 0;
-  }
+    #container {
+      background-color: #fff; /* color for area above the hr line */
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
-      img {
-        width: 10em;
-        height: 10em;
-        float: left;
-        /* margin-top: 3em; */
-        position: absolute;
-        left: 2em;
+    #left-size {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40em;
+    height: 46em;
+    background-color: #7caab8;
+    }
 
-      }
+    .centered-h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-right: 3.4em;
+      font-size: 4.7em;
+    }
 
-  #container {
-    background-color: #fff; /* color for area above the hr line */
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+    .centered-h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-right: 3.4em;
+      font-size: 2em;
+    }
 
-  #container hr {
-    border: none;
-    height: 2px;
-    background-color: #ccc; /* color for the hr line */
-    margin-top: 0;
-    margin-bottom: 0;
-  }
+    .left-banner-header{
+      font-size: 2em;
+      margin-top: 2em;
+      text-align: center;
+      margin-right: 9em;
+      margin-bottom: 0.2em;
+    }
 
-  #container .centered-h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-</style>
+    #education-paragraph{
+      font-size: 1em;
+      margin-top: 2em;
+      text-align: center;
+      margin-right: 9em;
+    }
 
+    .my-line {
+  border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
+  width: 50%; /* sets the width of the line to 50% of the container */
+  margin-left: 6em;
+}
+
+  </style>
+</head>
 <body>
   <div id="container">
     <img src="/images/DSC_0175.png" alt="An image of Daniel Gimelfarb"/>
     <h1 class="centered-h1">Daniel Gimelfarb</h1>
+    <h2 class="centered-h2">DevOps Engineer</h2>
+  </div>
+  <div id="left-size">
+      <h3 class="left-banner-header">Education</h3>
+      <div class="my-line"></div>
+      <p id="education-paragraph">
+        * Bsc at electrical engeneering<br>
+        * gewg<br>
+        * wqfwqfqw<br>
+        * fwqf<br>
+      </p>
+      <h3 class="left-banner-header">Expertise</h3>
+      <div class="my-line"></div>
+      <p id="education-paragraph">
+        * Bsc at electrical engeneering<br>
+        * gewg<br>
+        * wqfwqfqw<br>
+        * fwqf<br>
+      </p>
   </div>
 </body>
+</html>
