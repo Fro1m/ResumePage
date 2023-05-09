@@ -15,10 +15,10 @@
     }
 
     img {
-      width: 18em;
-      height: 18em;
+      width: 20em;
+      height: 20em;
       float: left;
-      margin-left: 4em;
+      margin-left: 3.2em;
       z-index: 1;
       position: relative;
     }
@@ -40,18 +40,20 @@
 
     .centered-h1 {
       text-align: center;
-      margin-bottom: 30px;
-      margin-top: 30px;
-      margin-right: 3.4em;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-right: 6.4em;
       font-size: 4.7em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .centered-h2 {
       text-align: center;
       margin-bottom: 30px;
-      margin-top: 30px;
-      margin-right: 3.4em;
-      font-size: 2em;
+      margin-top: 0;
+      margin-right: 2em;
+      font-size: 2.5em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .left-banner-header{
@@ -61,6 +63,7 @@
       margin-right: 9em;
       margin-bottom: 0.2em;
       margin-left: 3em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
 
     .left-banner-header-top{
@@ -69,14 +72,15 @@
       text-align: center;
       margin-right: 9em;
       margin-bottom: 0.2em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       margin-left: 3em;
     }
 
     #education-paragraph{
-      font-size: 1em;
+      font-size: 1.2em;
       margin-top: 2em;
       text-align: left;
-      
+      font-family: Georgia, 'Times New Roman', Times, serif;
       margin-left: 6em;
     }
 
@@ -84,11 +88,25 @@
      color: orange;
     }
 
-    #github-img{
+    #small-icons-github{
       width: 4.6em;
       height: 1.8em;
+      margin: 0;
     }
 
+    #small-icons-linkedin{
+      width: 4.6em;
+      height: 2.5em;
+      margin: 0;
+    }
+
+    .small-done-icon{
+      width: 2em;
+      height: 1.1em;
+      margin: 0;
+    }
+
+    
     .my-line {
   border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
   width: 50%; /* sets the width of the line to 50% of the container */
@@ -110,10 +128,10 @@
       <h3 class="left-banner-header-top">Education</h3>
       <div class="my-line"></div>
       <p id="education-paragraph">
-        &#x2705; Bsc at electrical engeneering<br>
-        &#x2705; gewg<br>
-        &#x2705; wqfwqfqw<br>
-        &#x2705; fwqf<br>
+        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> Bsc at electrical engeneering<br>
+        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> gewg<br>
+        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> wqfwqfqw<br>
+        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> fwqf<br>
       </p>
       <h3 class="left-banner-header">Expertise</h3>
       <div class="my-line"></div>
@@ -145,7 +163,15 @@
       <br>
       <br>
       <br>
-      <a href="https://github.com/Fro1m" target="_blank"><img id="github-img" src="/images/GitHub_Logo.png" alt="An image of github"/></a>
+      <div style="display: flex; justify-content: space-between; width: 80%; align-items: center; margin: auto;">
+        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-github" src="/images/GitHub_Logo.png" alt="An image of github"/></a>
+        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-linkedin" src="/images/icons8-linkedin.svg" alt="An image of linkedin"/></a>
+        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-linkedin" src="/images/icons8-instagram.svg" alt="An image of linkedin"/></a>
+        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-linkedin" src="/images/icons8-facebook.svg" alt="An image of linkedin"/></a>
+      </div>
+        
+      
+
       
   </div>
 
