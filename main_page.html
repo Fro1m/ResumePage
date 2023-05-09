@@ -5,6 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body {
       background-color: #e7eaec;
@@ -14,9 +16,9 @@
 
     img {
       width: 18em;
-      height: 18Sem;
+      height: 18em;
       float: left;
-      margin-left: 2.5em;
+      margin-left: 4em;
       z-index: 1;
       position: relative;
     }
@@ -28,11 +30,11 @@
     }
 
     #left-size {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    top: 0;
     left: 0;
-    width: 40em;
-    height: 46em;
+    width: 30em;
+    height: 100%;
     background-color: #7caab8;
     }
 
@@ -58,13 +60,33 @@
       text-align: center;
       margin-right: 9em;
       margin-bottom: 0.2em;
+      margin-left: 3em;
+    }
+
+    .left-banner-header-top{
+      font-size: 2em;
+      margin-top: 12em;
+      text-align: center;
+      margin-right: 9em;
+      margin-bottom: 0.2em;
+      margin-left: 3em;
     }
 
     #education-paragraph{
       font-size: 1em;
       margin-top: 2em;
-      text-align: center;
-      margin-right: 9em;
+      text-align: left;
+      
+      margin-left: 6em;
+    }
+
+    .checked {
+     color: orange;
+    }
+
+    #github-img{
+      width: 4.6em;
+      height: 1.8em;
     }
 
     .my-line {
@@ -81,23 +103,51 @@
     <h1 class="centered-h1">Daniel Gimelfarb</h1>
     <h2 class="centered-h2">DevOps Engineer</h2>
   </div>
+  <div>
+    <p style="text-align: center;">efewf</p>
+  </div>
   <div id="left-size">
-      <h3 class="left-banner-header">Education</h3>
+      <h3 class="left-banner-header-top">Education</h3>
       <div class="my-line"></div>
       <p id="education-paragraph">
-        * Bsc at electrical engeneering<br>
-        * gewg<br>
-        * wqfwqfqw<br>
-        * fwqf<br>
+        &#x2705; Bsc at electrical engeneering<br>
+        &#x2705; gewg<br>
+        &#x2705; wqfwqfqw<br>
+        &#x2705; fwqf<br>
       </p>
       <h3 class="left-banner-header">Expertise</h3>
       <div class="my-line"></div>
       <p id="education-paragraph">
-        * Bsc at electrical engeneering<br>
-        * gewg<br>
-        * wqfwqfqw<br>
-        * fwqf<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span> &nbsp;Linux administration <br> 
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> &nbsp;VMware <br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span> &nbsp;Network<br>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span> &nbsp;CI <br>
       </p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="https://github.com/Fro1m" target="_blank"><img id="github-img" src="/images/GitHub_Logo.png" alt="An image of github"/></a>
+      
   </div>
+
 </body>
 </html>
