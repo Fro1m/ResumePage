@@ -106,6 +106,21 @@
       margin: 0;
     }
 
+    #small-icons-dot{
+      margin-top: 3em;
+      margin-left: 10em;
+      width: 0.8em;
+      height: 0.8em;
+    }
+
+    #small-icons-line{
+      margin-left: 10em;
+      width: 8em;
+      height: 7em;
+      padding:0 ;
+      clip: rect(0px, 10px, 20px, 0px);
+    }
+
     
     .my-line {
   border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
@@ -121,9 +136,11 @@
     <h1 class="centered-h1">Daniel Gimelfarb</h1>
     <h2 class="centered-h2">DevOps Engineer</h2>
   </div>
-  <div>
-    <p style="text-align: center;">efewf</p>
+  <div style="display: flex; flex-direction: column; align-items: center;">
+    <img id="small-icons-dot" src="/images/Location_dot_black.svg" alt="An image of dot"/>
+    <img id="small-icons-line" src="/images/icons8-vertical-line-80.png" alt="An image of line"/>
   </div>
+  
   <div id="left-size">
       <h3 class="left-banner-header-top">Education</h3>
       <div class="my-line"></div>
