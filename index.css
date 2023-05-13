@@ -1,0 +1,38 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #e7eaec;
+    margin: 0;
+    padding: 0;
+  }
+
+#img-of-daniel{
+    width: 20em;
+}
+
+#left-side-of-page{
+    width: 30em;
+    height: 70em;
+    background-color: #7caab8;
+}
+
+.logo {
+    width: 3em;
+    height: 3em;
+}
+
+#github-logo {
+    width: 7.6em;
+}
+
+.checked {
+    color: orange;
+   }
+
+.done-sign{
+    height: 1.3em;
+    width: 1.5em;
+    margin: 0;
+}
