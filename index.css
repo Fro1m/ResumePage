@@ -24,6 +24,7 @@ body {
 }
 
 #education-header{
+    margin-bottom: -0.5em;
     font-size: 1.8em;
 }
 
@@ -34,17 +35,15 @@ body {
 
 #expertise-header{
     font-size: 1.8em;
+    margin-bottom: -0.5em;
 }
 
 #expertise-paragrapgh{
-    margin-top: -8em;
+    margin-top: -6em;
     font-size: 1.2em;
     margin-right: 1em;
 }
 
-#bottom-link-pictures{
-    
-}
 
 .logo {
     width: 3em;
@@ -58,6 +57,7 @@ body {
 
 .checked {
     color: orange;
+    margin-bottom: 0.2em;
    }
 
 .done-sign{
@@ -66,13 +66,21 @@ body {
     margin: 0;
 }
 
+#right-side-of-page{
+        background-color: #A9E7E6;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+}
+
 #header-of-page{
     width: 100%;
     height: auto;
 }
 
 h1{
-    padding-top: 0.6em;
+    padding-top: 0.5em;
     padding-left: 1.2em;
     padding-bottom: 0.2em;
     font-size: 4.5em;
@@ -83,17 +91,165 @@ h2{
     font-size: 3.2em;
     margin: 0;
     padding-left: 8em;
+    margin-bottom: 0.5em;
 }
 
-#body-of-page{
-    background-color: #7caab8;
-    align-self: flex-end;
+#body-of-the-page{
+    background-color: #b6c4dc;
+    display: flex;
+    justify-content: right;
     width: 100%;
     height: 100%;
 }
 
-#phone-cell{
-    min-width: 142em;
-    height: 14em;
+#left-box-of-phone{
+    background-color: #A9E7E6;
+    width: 150px;
+    height: 1.6em;
+    text-align: center;
+}
+
+#right-box-of-phone{
+    background-color: white;
+    width: 250px;
+    height: 1.6em;
+    text-align: center;
+}
+
+#left-box-of-email{
+    background-color: #A9E7E6;
+    width: 150px;
+    height: 1.6em;
+    text-align: center;
+}
+
+#right-box-of-email{
+    background-color: white;
+    width: 250px;
+    height: 1.6em;
+    text-align: center;
+}
+
+#boxes-of-phone{
+    display: flex;
+    margin-bottom: 3.5em;
+    width: 100%;
+}
+
+#boxes-of-email{
+    display: flex;
+    margin-bottom: 5.5em;
+    width: 100%;
+}
+
+#all-details-boxes{
+    align-self: flex-end; 
+    display: flex;
+    flex-direction: column;
+    width: 23em;
+} 
+
+#certificate-headline{
+    font-size: 2.8em;
+    width: 10em;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#certificate-paragraph{
+    margin-left: 8em;
+}
+
+#left-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#bottom-left-side-body{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(182, 147, 32);
+}
+
+#top-left-side-body{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+#work-experience-header{
+    text-align: center;
+    margin-right: 4.5em;
+    margin-left: 2em;
+    font-size: 2em;
+}
+
+#work-experience-paragraph{
+    margin-left: 4.3em;
+    font-size: 1em;
+}
+
+#personal-info-header{
+    margin-left: 2em;
+    font-size: 2em;
+}
+
+#personal-info-paragraph{
+    margin-left: 4.3em;
+    font-size: 1em;
+}
+
+#extra-skills-header{
+    margin-left: 2em;
+    font-size: 2em;
+}
+
+#extra-skills-paragraph{
+    margin-left: 4.3em;
+    font-size: 1em;
+}
+
+#copy-rights{
+    margin-top: 2em;
+}
+
+#text-stuff-in-work-experience{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#research-pa{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+#dct-pa{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+#programmer-pa{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    
+}
+
+#even-pa{
+    width: 50%;
+    height: 50%;
     text-align: center;
 }
