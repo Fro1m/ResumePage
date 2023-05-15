@@ -1,210 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume</title>
-  <!-- Add icon library -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body {
-      background-color: #e7eaec;
-      margin: 0;
-      padding: 0;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: #e7eaec;
+        margin: 0;
+        padding: 0;
+      }
 
-    img {
-      width: 20em;
-      height: 20em;
-      float: left;
-      margin-left: 3.2em;
-      z-index: 1;
-      position: relative;
-    }
+      img {
+        width: 20em;
+        height: 20em;
+        float: left;
+        margin-left: 3.2em;
+        z-index: 1;
+        position: relative;
+      }
 
-    #container {
-      background-color: #fff; /* color for area above the hr line */
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
+      #container {
+        background-color: #fff; /* color for area above the hr line */
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
 
-    #left-size {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 30em;
-    height: 100%;
-    background-color: #7caab8;
-    }
+      #left-size {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30em;
+        height: 100%;
+        background-color: #7caab8;
+      }
 
-    .centered-h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      margin-top: 20px;
-      margin-right: 6.4em;
-      font-size: 4.7em;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+      .centered-h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-right: 6.4em;
+        font-size: 4.7em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-    .centered-h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      margin-top: 0;
-      margin-right: 2em;
-      font-size: 2.5em;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+      .centered-h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 0;
+        margin-right: 2em;
+        font-size: 2.5em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-    .left-banner-header{
-      font-size: 2em;
-      margin-top: 2em;
-      text-align: center;
-      margin-right: 9em;
-      margin-bottom: 0.2em;
-      margin-left: 3em;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+      .left-banner-header {
+        font-size: 2em;
+        margin-top: 2em;
+        text-align: center;
+        margin-right: 9em;
+        margin-bottom: 0.2em;
+        margin-left: 3em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
 
-    .left-banner-header-top{
-      font-size: 2em;
-      margin-top: 12em;
-      text-align: center;
-      margin-right: 9em;
-      margin-bottom: 0.2em;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-left: 3em;
-    }
+      .left-banner-header-top {
+        font-size: 2em;
+        margin-top: 12em;
+        text-align: center;
+        margin-right: 9em;
+        margin-bottom: 0.2em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-left: 3em;
+      }
 
-    #education-paragraph{
-      font-size: 1.2em;
-      margin-top: 2em;
-      text-align: left;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-left: 6em;
-    }
+      #education-paragraph {
+        font-size: 1.2em;
+        margin-top: 2em;
+        text-align: left;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-left: 6em;
+      }
 
-    .checked {
-     color: orange;
-    }
+      .checked {
+        color: orange;
+      }
 
-    #small-icons-github{
-      width: 4.6em;
-      height: 1.8em;
-      margin: 0;
-    }
+      #small-icons-github {
+        width: 4.6em;
+        height: 1.8em;
+        margin: 0;
+      }
 
-    #small-icons-linkedin{
-      width: 4.6em;
-      height: 2.5em;
-      margin: 0;
-    }
+      #small-icons-linkedin {
+        width: 4.6em;
+        height: 2.5em;
+        margin: 0;
+      }
 
-    .small-done-icon{
-      width: 2em;
-      height: 1.1em;
-      margin: 0;
-    }
+      .small-done-icon {
+        width: 2em;
+        height: 1.1em;
+        margin: 0;
+      }
 
-    #small-icons-dot{
-      margin-top: 1.6em;
-      margin-bottom: 1.6em;
-      margin-left: 12em;
-      width: 0.8em;
-      height: 0.8em;
-    }
+      #small-icons-dot {
+        margin-top: 1.6em;
+        margin-bottom: 1.6em;
+        margin-left: 12em;
+        width: 0.8em;
+        height: 0.8em;
+      }
 
-    #small-icons-dot-top{
-      margin-top: 3em;
-      margin-bottom: 1.6em;
-      margin-left: 12em;
-      width: 0.8em;
-      height: 0.8em;
-    }
+      #small-icons-dot-top {
+        margin-top: 3em;
+        margin-bottom: 1.6em;
+        margin-left: 12em;
+        width: 0.8em;
+        height: 0.8em;
+      }
 
-    #small-icons-line{
-      margin-left: 8.4em;
-      width: 8em;
-      height: 6em;
-      transform: rotate(90deg);
-    }
+      #small-icons-line {
+        margin-left: 8.4em;
+        width: 8em;
+        height: 6em;
+        transform: rotate(90deg);
+      }
 
-    
-    .my-line {
-      border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
-      width: 50%; /* sets the width of the line to 50% of the container */
-      margin-left: 6em;
-    }
+      .my-line {
+        border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
+        width: 50%; /* sets the width of the line to 50% of the container */
+        margin-left: 6em;
+      }
 
-    
-    #work-experience-header{
-      font-size: 1.7em;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-left: 18em;
-    }
+      #work-experience-header {
+        font-size: 1.7em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-left: 18em;
+      }
 
-    #my-line-2 {
-      border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
-      width: 45%; /* sets the width of the line to 50% of the container */
-      margin-left: 0em;
-    }
+      #my-line-2 {
+        border-top: 1.5px solid black; /* creates a solid black line with a thickness of 2px */
+        width: 45%; /* sets the width of the line to 50% of the container */
+        margin-left: 0em;
+      }
 
-    #about-me-header{
-      font-size: 1.7em;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      margin-left: 57em;
-      margin-top: 0em;
-    }
+      #about-me-header {
+        font-size: 1.7em;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-left: 57em;
+        margin-top: 0em;
+      }
 
-    #box1{
-      margin-top: 5em;
-    }
-    
-  </style>
-</head>
-<body>
-  <div id="container">
-    <img src="/images/DSC_0175.png" alt="An image of Daniel Gimelfarb"/>
-    <h1 class="centered-h1">Daniel Gimelfarb</h1>
-    <h2 class="centered-h2">DevOps Engineer</h2>
-  </div>
-  <h3 id="work-experience-header">Work experience</h3>
-  
-  <div id="my-line-2"></div>
-  <div style="display: flex; flex-direction: column; justify-content: space-between; height: 300px;">
-    <img id="small-icons-dot-top" src="/images/Location_dot_black.svg" alt="An image of dot"/>
-    <img id="small-icons-line" src="/images/13048718681586788051.svg" alt="An image of line"/>
-    <img id="small-icons-dot" src="/images/Location_dot_black.svg" alt="An image of dot"/>
-    <img id="small-icons-line" src="/images/13048718681586788051.svg" alt="An image of line"/>
-    <img id="small-icons-dot" src="/images/Location_dot_black.svg" alt="An image of dot"/>
-    <img id="small-icons-line" src="/images/13048718681586788051.svg" alt="An image of line"/>
-    <img id="small-icons-dot" src="/images/Location_dot_black.svg" alt="An image of dot"/>
-  </div>
-  <p style="margin-left: 38em; margin-top: -16em;">Project management</p>
-  <p style="margin-left: 38em; margin-top: 8.8em;">Board design & C language programing</p>
-  <p style="margin-left: 38em; margin-top: 8.8em;">Head of IT-Team</p>
-  <p style="margin-left: 38em; margin-top: 8.8em;">2023 - now Head of DevOps team</p>
-  
-  
+      #box1 {
+        margin-top: 5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img src="/images/DSC_0175.png" alt="An image of Daniel Gimelfarb" />
+      <h1 class="centered-h1">Daniel Gimelfarb</h1>
+      <h2 class="centered-h2">DevOps Engineer</h2>
+    </div>
+    <h3 id="work-experience-header">Work experience</h3>
 
-  <div style="display: flex; justify-content: space-between;">
-    <div style="width:100px;height:40px;border:1px solid #000; margin-left:99em;"></div>
-    <div style="width:250px;height:40px;border:1px solid #000; margin-right: 0em"></div>
-  </div>
+    <div id="my-line-2"></div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+      "
+    >
+      <img
+        id="small-icons-dot-top"
+        src="/images/Location_dot_black.svg"
+        alt="An image of dot"
+      />
+      <img
+        id="small-icons-line"
+        src="/images/13048718681586788051.svg"
+        alt="An image of line"
+      />
+      <img
+        id="small-icons-dot"
+        src="/images/Location_dot_black.svg"
+        alt="An image of dot"
+      />
+      <img
+        id="small-icons-line"
+        src="/images/13048718681586788051.svg"
+        alt="An image of line"
+      />
+      <img
+        id="small-icons-dot"
+        src="/images/Location_dot_black.svg"
+        alt="An image of dot"
+      />
+      <img
+        id="small-icons-line"
+        src="/images/13048718681586788051.svg"
+        alt="An image of line"
+      />
+      <img
+        id="small-icons-dot"
+        src="/images/Location_dot_black.svg"
+        alt="An image of dot"
+      />
+    </div>
+    <p style="margin-left: 38em; margin-top: -16em">Project management</p>
+    <p style="margin-left: 38em; margin-top: 8.8em">
+      Board design & C language programing
+    </p>
+    <p style="margin-left: 38em; margin-top: 8.8em">Head of IT-Team</p>
+    <p style="margin-left: 38em; margin-top: 8.8em">
+      2023 - now Head of DevOps team
+    </p>
 
-  <div id="box1" style="display: flex; justify-content: space-between; ">
-    <div style="width:100px;height:40px;border:1px solid #000; margin-left:99em;"></div>
-    <div style="width:250px;height:40px;border:1px solid #000; margin-right: 0em"></div>
-  </div>
-  
-  <div id="left-size">
+    <div style="display: flex; justify-content: space-between">
+      <div
+        style="
+          width: 100px;
+          height: 40px;
+          border: 1px solid #000;
+          margin-left: 99em;
+        "
+      ></div>
+      <div
+        style="
+          width: 250px;
+          height: 40px;
+          border: 1px solid #000;
+          margin-right: 0em;
+        "
+      ></div>
+    </div>
+
+    <div id="box1" style="display: flex; justify-content: space-between">
+      <div
+        style="
+          width: 100px;
+          height: 40px;
+          border: 1px solid #000;
+          margin-left: 99em;
+        "
+      ></div>
+      <div
+        style="
+          width: 250px;
+          height: 40px;
+          border: 1px solid #000;
+          margin-right: 0em;
+        "
+      ></div>
+    </div>
+
+    <div id="left-size">
       <h3 class="left-banner-header-top">Education</h3>
       <div class="my-line"></div>
       <p id="education-paragraph">
-        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> Bsc at electrical engeneering<br>
-        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> gewg<br>
-        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> wqfwqfqw<br>
-        <img class="small-done-icon" src="/images/icons8-done.svg" alt="An image of done"/> fwqf<br>
+        <img
+          class="small-done-icon"
+          src="/images/icons8-done.svg"
+          alt="An image of done"
+        />
+        Bsc at electrical engeneering<br />
+        <img
+          class="small-done-icon"
+          src="/images/icons8-done.svg"
+          alt="An image of done"
+        />
+        gewg<br />
+        <img
+          class="small-done-icon"
+          src="/images/icons8-done.svg"
+          alt="An image of done"
+        />
+        wqfwqfqw<br />
+        <img
+          class="small-done-icon"
+          src="/images/icons8-done.svg"
+          alt="An image of done"
+        />
+        fwqf<br />
       </p>
       <h3 class="left-banner-header">Expertise</h3>
       <div class="my-line"></div>
@@ -213,40 +298,64 @@
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span> &nbsp;Linux administration <br> 
+        <span class="fa fa-star checked"></span> &nbsp;Linux administration
+        <br />
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span> &nbsp;VMware <br>
+        <span class="fa fa-star"></span> &nbsp;VMware <br />
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span> &nbsp;Network<br>
+        <span class="fa fa-star"></span> &nbsp;Network<br />
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
         <span class="fa fa-star checked"></span>
-        <span class="fa fa-star"></span> &nbsp;CI <br>
+        <span class="fa fa-star"></span> &nbsp;CI <br />
       </p>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div style="display: flex; justify-content: space-between; width: 80%; align-items: center; margin: auto;">
-        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-github" src="/images/GitHub_Logo.png" alt="An image of github"/></a>
-        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-linkedin" src="/images/icons8-linkedin.svg" alt="An image of linkedin"/></a>
-        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-linkedin" src="/images/icons8-instagram.svg" alt="An image of linkedin"/></a>
-        <a href="https://github.com/Fro1m" target="_blank"><img id="small-icons-linkedin" src="/images/icons8-facebook.svg" alt="An image of linkedin"/></a>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          align-items: center;
+          margin: auto;
+        "
+      >
+        <a href="https://github.com/Fro1m" target="_blank"
+          ><img
+            id="small-icons-github"
+            src="/images/GitHub_Logo.png"
+            alt="An image of github"
+        /></a>
+        <a href="https://github.com/Fro1m" target="_blank"
+          ><img
+            id="small-icons-linkedin"
+            src="/images/icons8-linkedin.svg"
+            alt="An image of linkedin"
+        /></a>
+        <a href="https://github.com/Fro1m" target="_blank"
+          ><img
+            id="small-icons-linkedin"
+            src="/images/icons8-instagram.svg"
+            alt="An image of linkedin"
+        /></a>
+        <a href="https://github.com/Fro1m" target="_blank"
+          ><img
+            id="small-icons-linkedin"
+            src="/images/icons8-facebook.svg"
+            alt="An image of linkedin"
+        /></a>
       </div>
-        
-      
-
-      
-  </div>
-
-</body>
+    </div>
+  </body>
 </html>
