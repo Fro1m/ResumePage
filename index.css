@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 23em;
+    width: 28em;
     background-color: #7caab8;
 }
 
@@ -26,16 +26,20 @@ body {
 #education-header{
     margin-bottom: -0.5em;
     font-size: 1.8em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #education-paragraph{
     margin-top: -8em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #expertise-header{
     font-size: 1.8em;
     margin-bottom: -0.5em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #expertise-paragrapgh{
@@ -77,6 +81,9 @@ body {
 #header-of-page{
     width: 100%;
     height: auto;
+    border-width: 1px;
+    border-bottom: solid;
+    border-width: 1px;    
 }
 
 h1{
@@ -85,6 +92,7 @@ h1{
     padding-bottom: 0.2em;
     font-size: 4.5em;
     margin: 0;
+    
 }
 
 h2{
@@ -154,16 +162,20 @@ h2{
     width: 10em;
     text-align: center;
     margin-top: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #right-side{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 #certificate-paragraph{
-    margin-left: 8em;
+    margin-left: 2.4em;
+    font-size: 0.93em;
 }
 
 #left-side{
@@ -177,14 +189,19 @@ h2{
     flex-direction: column;
     height: 50%;
     width: 100%;
-    background-color: rgb(182, 147, 32);
+    background-color: #A9E7E6;
+    border-top: solid;
+    border-width: 1px; 
+    border-right: solid;
+    border-width: 1px; 
+
 }
 
 #top-left-side-body{
     display: flex;
     height: 50%;
     width: 100%;
-    background-color: aquamarine;
+    background-color: #b6c4dc;
 }
 
 #work-experience-header{
@@ -192,6 +209,8 @@ h2{
     margin-right: 4.5em;
     margin-left: 2em;
     font-size: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #work-experience-paragraph{
@@ -202,16 +221,21 @@ h2{
 #personal-info-header{
     margin-left: 2em;
     font-size: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #personal-info-paragraph{
-    margin-left: 4.3em;
+    margin-left: 2.3em;
     font-size: 1em;
+    text-align: center;
 }
 
 #extra-skills-header{
     margin-left: 2em;
     font-size: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 #extra-skills-paragraph{
@@ -233,18 +257,24 @@ h2{
     width: 50%;
     height: 50%;
     text-align: center;
+    border-bottom: solid;    
+    border-width: 1px; 
 }
 
 #dct-pa{
     width: 50%;
     height: 50%;
     text-align: center;
+    border-bottom: solid;
+    border-width: 1px; 
 }
 
 #programmer-pa{
     width: 50%;
     height: 50%;
     text-align: center;
+    border-bottom: solid;
+    border-width: 1px; 
     
 }
 
@@ -252,4 +282,7 @@ h2{
     width: 50%;
     height: 50%;
     text-align: center;
+    border-bottom: solid;
+    border-width: 1px; 
 }
+
